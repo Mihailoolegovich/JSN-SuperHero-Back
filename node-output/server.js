@@ -10,7 +10,7 @@
     "description" : "SwaggerHub API Auto Mocking"
   } ],
   "paths" : {
-    "/devices" : {
+    "/" : {
       "get" : {
         "tags" : [ "Device" ],
         "description" : "returns all registered devices",

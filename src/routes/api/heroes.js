@@ -1,11 +1,11 @@
 const express = require("express");
-const { heroesApi: ctrl } = require("../../controllers");
+const { heroesApi } = require("../../controllers");
 const { ctrlWrapper } = require("../../middlewares");
 const router = express.Router();
 
-router.get("/", ctrlWrapper(ctrl.getAll));
-router.post("/", ctrlWrapper(ctrl.add));
-router.put("/:heroId", ctrlWrapper(ctrl.update));
-router.delete("/:heroId", ctrlWrapper(ctrl.remove));
+router.get("/", ctrlWrapper(heroesApi.getAll));
+router.post("/", ctrlWrapper(heroesApi.add));
+router.put("/:heroId", ctrlWrapper(heroesApi.update));
+router.delete("/:heroId", ctrlWrapper(heroesApi.remove));
 
 module.exports = router;

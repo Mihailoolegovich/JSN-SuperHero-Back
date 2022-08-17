@@ -38,6 +38,7 @@
 
 /**
  * @swagger
+ * paths:
  * /api/heroes:
  *  get:
  *     security:
@@ -55,6 +56,7 @@
 
 /**
  * @swagger
+ * paths:
  * /api/heroes:
  *   post:
  *     summary: Create a new hero
@@ -95,6 +97,7 @@
 
 /**
  * @swagger
+ * paths:
  * /api/heroes/{id}:
  *   put:
  *     summary: Changing the data of the hero
@@ -137,6 +140,7 @@
 
 /**
  * @swagger
+ * paths:
  * /api/heroes/{id}:
  *   delete:
  *     summary: Delete the Hero by id

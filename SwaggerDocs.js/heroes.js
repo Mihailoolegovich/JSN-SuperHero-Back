@@ -9,7 +9,7 @@
  * @swagger
  * components:
  *   schemas:
- *     User:
+ *     Hero:
  *       type: object
  *       required:
  *         - avatar

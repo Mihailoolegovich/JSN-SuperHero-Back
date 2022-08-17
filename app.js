@@ -1,6 +1,7 @@
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
+const path = require("path");
 const heroesRouter = require("./src/routes/api/heroes");
 
 const swaggerUI = require("swagger-ui-express");
@@ -23,7 +24,7 @@ const options = {
       },
     ],
   },
-  apis: ["./SwaggerDocs/*.js"],
+  apis: [path.join(process.cwd(), "/SwaggerDocs/*.js")],
 };
 
 const specs = swaggerJsDoc(options);

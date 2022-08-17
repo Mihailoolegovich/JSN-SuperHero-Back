@@ -96,7 +96,6 @@
 /**
  * @swagger
  * /api/heroes/{id}:
- *   patch:
  *     summary: Changing the data of the hero
  *     tags: [Heroes]
  *     parameters:

@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get("/", ctrlWrapper(heroesApi.getAll));
 router.post("/", ctrlWrapper(heroesApi.add));
-router.put("/:heroId", ctrlWrapper(heroesApi.update));
+router.patch("/:heroId", ctrlWrapper(heroesApi.update));
 router.delete("/:heroId", ctrlWrapper(heroesApi.remove));
 
 module.exports = router;
